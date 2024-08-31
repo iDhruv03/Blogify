@@ -4,7 +4,7 @@
 - Dev dependency is required only in development enviornment.
 - Ex: `npm i nodemon --dev`
 - It will not be used in Production enviornment.
-- We haave used `Partials` Folder Which includes all the files which are partial for many other files.
+- Have used `Partials` Folder Which includes all the files which are partial for many other files.
 - Steps :
     - Created Models
     - Created Views 
