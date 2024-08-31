@@ -12,6 +12,7 @@ const storage = multer.diskStorage({
     filename: function (req, file, cb) {
       const fileName = `${Date.now()}-${file.originalname}`
       cb(null,fileName);
+
     }
 }) 
 const upload = multer({ storage: storage })
@@ -43,7 +44,7 @@ router.get('/:id',async(req, res)=>{
         comments,
     })
 })
-
+// post request
 router.post('/comment/:blogId',async(req,res)=>{
     await Comment.create({
         content: req.body.content,
