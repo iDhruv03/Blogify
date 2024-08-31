@@ -36,6 +36,7 @@ app.get('/',async(req,res)=>{
 app.use('/user',userRoute) 
 // If any request start with /user then use `userRoute`
 app.use('/blog',blogRoute) 
+app.use('/blog/user', userRoute);
 
 
 
